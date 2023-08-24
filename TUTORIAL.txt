@@ -40,3 +40,21 @@ HUSKI = adalah untuk bisa di gunakan untuk pre commit untuk memastikan setiap co
 "check-lint" : "eslint . --ext ts --ext tsx --ext js"
 
 4. lalu ketika di running <b>Prepare</b> akan membuat sebuah folder
+5. buat file pre-commit di dalam .husky lalu isikan : #!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+6. When commit has error "hint: The '.husky/pre-commit' hook was ignored because it's not set as executable."
+7. git config advice.ignoredHook false
+8. chmod ug+x .husky/*
+9. chmod ug+x .git/hooks/*
+
+
+Untuk logger menggunkan Pino.js & Handle Request Body
+1. npm i pino pino pino-pretty
+2. pino untuk logger
+3. pino-pretty untuk transform text yang ada di command license
+
+Untuk body-parser dan cors
+
+
+Untuk validasi akan memanfaatkan joy
