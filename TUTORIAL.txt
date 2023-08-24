@@ -58,3 +58,8 @@ Untuk body-parser dan cors
 
 
 Untuk validasi akan memanfaatkan joy
+
+
+
+Mongoose
+1. npm i mongoose
