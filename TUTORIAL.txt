@@ -1,0 +1,24 @@
+1. npm init
+2. npm i -D typescript ts-node
+3. npx tsc --init
+4. npm i express
+5. npm nodemon
+6. setup nodemon
+7. install eslint
+8. npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard
+9. npm i -D prettier --save-exact
+
+
+
+
+COnifg eslint:
+1. to check syntax, find problems, and enforce code style
+2. Javascript module
+3. None of these
+4. yes
+5. Browser and Node using space untuk mengchecklist
+6. Use a popular style guide
+7. standard
+8. JSON
+9. YEs
+10. npm
