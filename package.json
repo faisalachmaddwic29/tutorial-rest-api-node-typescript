@@ -7,8 +7,17 @@
         "start": "npx tsc --watch",
         "dev": "npx nodemon",
         "build": "tsc",
-        "format" : "prettier --write .",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "format": "prettier --write .",
+        "prepare": "husky install",
+        "check-types": "tsc --pretty --noEmit",
+        "check-format" : "prettier --check .",
+        "check-lint" : "eslint . --ext ts --ext tsx --ext js"
+    },
+    "husky" : {
+        "hooks": {
+            "pre-commit" : "npx pretty-quick --staged ng lint ng test",
+            "pre-push" : "ng build --aot true"
+        }
     },
     "author": "Faisal Achmad Dwi Cahyono",
     "license": "ISC",
@@ -25,7 +34,9 @@
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-promise": "^6.1.1",
         "eslint-plugin-standard": "^5.0.0",
+        "husky": "^8.0.3",
         "prettier": "3.0.2",
+        "pretty-quick": "^3.1.3",
         "ts-node": "^10.9.1",
         "typescript": "^5.1.6"
     },

@@ -22,3 +22,21 @@ COnifg eslint:
 8. JSON
 9. YEs
 10. npm
+
+
+HUSKI = adalah untuk bisa di gunakan untuk pre commit untuk memastikan setiap code yang ada sudah sesuai eslint dan prettier karena kita akan auto deploy menggunkana CICD
+1. npm i -D husky pretty-quick
+2. ubah di package .json tambahakan key baru di luar
+"husky" : {
+        "hooks": {
+            "pre-commit" : "npx pretty-quick --staged ng lint ng test",
+            "pre-push" : "ng build --aot true"
+        }
+    },
+3. tambahkan scripts: 
+"prepare": "husky install",
+"check-types": "tsc --pretty --noEmit",
+"check-format" : "prettier --check .",
+"check-lint" : "eslint . --ext ts --ext tsx --ext js"
+
+4. lalu ketika di running <b>Prepare</b> akan membuat sebuah folder
