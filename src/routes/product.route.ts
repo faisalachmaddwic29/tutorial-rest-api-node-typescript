@@ -4,5 +4,5 @@ import { createProduct, getAllProduct, getProduct } from '../controllers/product
 export const ProductRouter: Router = Router()
 
 ProductRouter.get('/', getAllProduct)
-ProductRouter.get('/:name', getProduct)
+ProductRouter.get('/:id', getProduct)
 ProductRouter.post('/', createProduct)
