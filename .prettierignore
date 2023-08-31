@@ -1,11 +1,11 @@
-eslint.json
-prettier.json
+# eslint.json
+# prettier.json
+# tsconfig.json
+# nodemon.json
 package.json
 package-lock.json
-tsconfig.json
 CHANGLOG.md
 readme.md
-nodemon.json
 yarn.lock
 dist
 build
