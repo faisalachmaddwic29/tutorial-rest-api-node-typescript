@@ -68,8 +68,16 @@ Mongoose
 
 bcrypt
 1. https://travistidwell.com/jsencrypt/demo/ untuk generator private dan public
+https://tutorial-rest-api-node-typescript-three.vercel.app/health
 
 
 # Ketika Project Sudah selesai
 1. npm run format => untuk menjalankan eslitnya
 2. lalu push ke git
+
+
+
+install JEST supertest @types/jest @types/supertest mongodb-memory-server ts-jest -D 
+1. npx ts-jest config:init
+
+Route flownya itu dari => route -> middleware -> controller -> validation -> services -> models
