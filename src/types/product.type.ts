@@ -1,6 +1,6 @@
 export interface ProductType {
-    product_id: string
-    name: string
+    product_id: String
+    name: String
     price?: Number
-    size: string
+    size: String
 }

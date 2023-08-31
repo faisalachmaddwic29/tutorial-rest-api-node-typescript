@@ -28,9 +28,9 @@ export const createProduct = async (req: Request, res: Response) => {
         await addProductFromDB(value)
         logger.info({ data: req.body }, 'Success add new product')
 
-        res.status(200).send({
+        res.status(201).send({
             status: true,
-            statusCode: 200,
+            statusCode: 201,
             message: 'Success add new product',
             data: value
         })
