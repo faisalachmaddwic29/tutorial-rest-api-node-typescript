@@ -1,7 +1,7 @@
 import 'dotenv/config'
 
 const CONFIG = {
-    db: `mongodb+srv://faisalahmaddwicahyono:UnpO1bPpiuGcUe4O@cluster0.hkfa3tk.mongodb.net/web?retryWrites=true&w=majority`,
+    db: 'process.env.DB',
     jwt_public: `-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAloH+4fIl/81orZxrxHRe
 bBpNGWcIHlqgJmFr9PWwghsPgZ1iyBCeZnxclPxHuAGoUVwNzBZHyN+Dg936SiSZ
