@@ -63,3 +63,13 @@ Untuk validasi akan memanfaatkan joy
 
 Mongoose
 1. npm i mongoose
+
+
+
+bcrypt
+1. https://travistidwell.com/jsencrypt/demo/ untuk generator private dan public
+
+
+# Ketika Project Sudah selesai
+1. npm run format => untuk menjalankan eslitnya
+2. lalu push ke git

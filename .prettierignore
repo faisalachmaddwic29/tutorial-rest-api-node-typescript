@@ -3,6 +3,7 @@
 # tsconfig.json
 # nodemon.json
 # package.json
+# vercel.json
 package-lock.json
 CHANGLOG.md
 readme.md
@@ -11,4 +12,3 @@ dist
 build
 public
 node_modules
-vercel.json
