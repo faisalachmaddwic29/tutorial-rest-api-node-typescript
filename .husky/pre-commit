@@ -31,6 +31,4 @@ npm run build ||
     false;
 )
 
-git push origin main
-
 echo "Success Commit and push to github";
