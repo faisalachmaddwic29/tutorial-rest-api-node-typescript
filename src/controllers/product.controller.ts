@@ -76,7 +76,7 @@ export const getProduct = async (req: Request, res: Response) => {
             logger.error('Product tidak di temukan dengan id : ' + id)
             return res.status(404).send({
                 status: false,
-                statusCode: 422,
+                statusCode: 404,
                 message: 'Produk tidak ditemukan',
                 data: {}
             })
